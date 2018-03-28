@@ -1,0 +1,32 @@
+{
+    "name": "log",
+    "version": "0.1.0",
+    "license": "GNU",
+    "main": "index.js",
+    "scripts": {
+        "check": "tsc --noEmit",
+        "check:watch": "tsc --noEmit --watch",
+        "clean:ps": "rm lib -r -fo",
+        "clean:travis": "rm -rf lib",
+        "build":
+            "tsc --emitDeclarationOnly && babel src --out-dir lib --extensions \".ts\"",
+        "run": "npm run build && node index.js",
+        "test": "mocha -r ts-node/register test/**/*.ts"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.0.0-beta.42",
+        "@babel/core": "^7.0.0-beta.42",
+        "@babel/plugin-proposal-class-properties": "^7.0.0-beta.42",
+        "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.42",
+        "@babel/preset-env": "^7.0.0-beta.42",
+        "@babel/preset-typescript": "^7.0.0-beta.42",
+        "@types/chai": "^4.1.2",
+        "@types/mocha": "^5.0.0",
+        "chai": "^4.1.2",
+        "eslint": "^4.19.1",
+        "mocha": "^5.0.5",
+        "ts-node": "^5.0.1",
+        "tslint": "^5.9.1",
+        "typescript": "^2.7.2"
+    }
+}
