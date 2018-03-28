@@ -1,7 +1,7 @@
 /* tslint:enable */
 
-import {expect} from 'chai';
-import 'mocha';
+// import {expect} from 'chai';
+// import 'mocha';
 // import index from '../src/index';
 
 // describe('Hello function', () => {
