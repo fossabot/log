@@ -1,6 +1,6 @@
 # Beautiful Log
 
-**Note**: This quick start repository uses a pre-release version of Babel. While you should be aware that some of the dependencies here are in flux, feel free to try it out!
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphamhongphuc%2Flog.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphamhongphuc%2Flog?ref=badge_shield)
 
 ## Description
 
