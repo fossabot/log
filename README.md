@@ -26,7 +26,7 @@ log({
 }, {
     title: "The most beautiful log",
     color: chalk.blue,
-    length: 20,
+    length: 40,
     middle: true,
 });
 ```
