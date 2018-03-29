@@ -1,6 +1,6 @@
 {
     "name": "log",
-    "version": "0.1.0",
+    "version": "0.2.4",
     "license": "GNU",
     "main": "index.js",
     "scripts": {
@@ -11,6 +11,8 @@
         "build":
             "tsc --emitDeclarationOnly && babel src --out-dir lib --extensions \".ts\"",
         "run": "npm run build && node index.js",
+        "run:ts": "ts-node src/index.ts",
+        "watch": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
         "test": "mocha -r ts-node/register test/**/*.ts"
     },
     "devDependencies": {
@@ -28,5 +30,8 @@
         "ts-node": "^5.0.1",
         "tslint": "^5.9.1",
         "typescript": "^2.7.2"
+    },
+    "dependencies": {
+        "chalk": "^2.3.2"
     }
 }

@@ -1,17 +1,22 @@
-/* tslint:enable */
-
 import {expect} from 'chai';
+import chalk from 'chalk';
 import 'mocha';
-import index from '../src/index';
+import log from '../src/index';
 
-describe('Hello function', () => {
+describe('Sample log', () => {
     it('should be return hello world', () => {
-        const result = index();
-        expect(result).to.equal('Hello world');
-    });
-
-    it('should be return Number', () => {
-        const result = index();
-        expect(typeof result).to.equal('string');
+        log(
+            {
+                author: 'phamhongphuc',
+                repository: 'phamhongphuc/log',
+                version: '0.2.2',
+            },
+            {
+                color: chalk.blue,
+                middle: true,
+                title: 'The most beautiful log',
+            }
+        );
+        expect(1).to.equal(1);
     });
 });
